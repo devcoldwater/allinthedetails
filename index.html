@@ -4,19 +4,32 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Delight in the details</title>
 	<style>
 		body {
 
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
 		background-color: #ffffff;
 		margin: 0;
 		padding: 0;
 		-webkit-font-smoothing: antialiased;
 		font-family: helvetica, 'helvetica neue', arial, verdana, sans-serif;
+		}
+
+		table {
+			border-collapse: collapse !important;
+		}
+		
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
 		}
 	
 		img {
@@ -28,6 +41,24 @@
 		tr, td {
 			display: inline-block;
 			width: 100%;
+		}
+
+		@media only screen and (max-width: 479px) {
+			.logo {
+				width: 70% !important;
+				height: auto !important;
+				text-align: center;
+				margin: auto 0;
+			}
+		}
+		
+		@media only screen and (max-width: 415px) {
+			.hideDesktop {
+				display: block;
+			}
+			.hideMobile {
+				display: none;
+			}
 		}
 	</style>
 </head>
